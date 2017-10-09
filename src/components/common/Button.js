@@ -36,9 +36,4 @@ const styles = {
   }
 }
 
-Button.PropTypes = {
-  onPress: PropTypes.func.isRequired,
-  children: PropTypes.string.isRequired
-}
-
 export default Button
