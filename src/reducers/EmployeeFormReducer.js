@@ -5,7 +5,7 @@ import {
 const initialState = {
   name: '',
   phone: '',
-  shift: ''
+  shift: 'Thursday'
 }
 
 export default (state = initialState, action) => {
