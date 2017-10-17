@@ -1,14 +1,13 @@
 import React from 'react'
-import { Router, Stack, Scene } from 'react-native-router-flux'
+import { Scene, Router } from 'react-native-router-flux'
 import LoginForm from './components/LoginForm'
 
-const RouterComponent = () => {
-
-  return (
-    <Router sceneStyle={{ paddingTop: 65 }}>
+const RouterComponent = () => (
+  <Router>
+    <Scene key="root">
       <Scene key="login" component={LoginForm} title="Login" />
-    </Router>
-  )
-}
+    </Scene>
+  </Router>
+)
 
 export default RouterComponent
