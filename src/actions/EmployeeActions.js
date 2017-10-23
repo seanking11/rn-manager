@@ -51,3 +51,15 @@ export const clearEmployeeForm = () => {
         type: CLEAR_EMPLOYEE_FORM
     })
 }
+
+export const employeeDelete = ({ uid }) => {
+  const { currentUser } = firebase.auth()
+
+  return () => {
+    firebase.database().ref(`/users/${currentUser.uid}/employees/${uid}`)
+      .remove()
+      .then(() => {
+        Actions.pop()
+      })
+  }
+}

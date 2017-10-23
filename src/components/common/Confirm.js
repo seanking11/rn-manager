@@ -11,7 +11,7 @@ const Confirm = ({ children, banana, onAccept, onDecline }) => {
       visible={banana}
       transparent
       animationType="slide"
-      onRequestClose={() => console.log('Closing modal')}
+      onRequestClose={() => {}}
     >
       <View style={containerStyle}>
         <CardSection style={cardSectionStyle}>
