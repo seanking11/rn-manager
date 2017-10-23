@@ -1,4 +1,4 @@
-# rn-manager
+# rn-manager [Completed]
 
 react-native application that allows users to login and manage a list of employees with a CRUD like system.
 
